@@ -1,0 +1,15 @@
+#footer_menu {
+   position:absolute;
+   bottom:0;
+   width: 100%;
+   text-align: center;
+}
+
+.card, .navbar, .footer{
+  font-family: 'Lato', sans-serif;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #E3F2FD;
+ }

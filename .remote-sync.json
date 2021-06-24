@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "dev-isi.utt.fr",
+  "port": "22",
+  "target": "/home/etu/marconan/www",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "marconan",
+  "password": "Milna36330",
+  "watch": [],
+  "transport": "scp"
+}
