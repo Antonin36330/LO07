@@ -1,6 +1,8 @@
 <?php
 require('../controller/Controller.php');
 require('../controller/ControllerVaccin.php');
+require('../controller/ControllerCentre.php');
+require('../controller/ControllerPatient.php');
 
 $query_string = $_SERVER['QUERY_STRING'];
 
@@ -21,10 +23,22 @@ switch ($action) {
   case "vaccinCreated" :
   case "vaccinMaj" :
   case "vaccinMaj2" :
-      ControllerVaccin::$action();
-      break;
+  ControllerVaccin::$action();
+  break;
 
-    default:
-        $action = "accueil";
-        Controller::$action();
+  case "centreReadAll" :
+  case "centreNew" :
+  case "centreCreated" :
+  ControllerCentre::$action();
+  break;
+
+  case "patientReadAll" :
+  case "patientNew" :
+  case "patientCreated" :
+  ControllerPatient::$action();
+  break;
+
+  default:
+  $action = "accueil";
+  Controller::$action();
 }

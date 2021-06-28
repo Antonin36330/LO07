@@ -3,6 +3,7 @@
   position: fixed;
    width: 100%;
    text-align: center;
+    display: flex;
 }
 
 
@@ -13,4 +14,8 @@
 .table-striped>tbody>tr:nth-child(odd)>td,
 .table-striped>tbody>tr:nth-child(odd)>th {
    background-color: #E3F2FD;
+ }
+
+ #map {
+   height: 100%;
  }

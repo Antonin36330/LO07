@@ -56,14 +56,14 @@ class ModelVaccin
         try {
             $database = Model::getInstance();
 
-            // recherche de la valeur de la clé = max(id) + 1
+            // la valeur de la clé = max(id) + 1
             $query = "select max(id) from vaccin";
             $statement = $database->query($query);
             $tuple = $statement->fetch();
             $id = $tuple['0'];
             $id++;
 
-            // ajout d'un nouveau tuple;
+            //  nouveau tuple;
             $query = "insert into vaccin value (:id, :label, :doses)";
             $statement = $database->prepare($query);
             $statement->execute([
@@ -83,7 +83,7 @@ class ModelVaccin
         try {
             $database = Model::getInstance();
 
-            // recherche de la valeur de la clé = max(id) + 1
+            // la valeur de la clé = max(id) + 1
             $query = "update vaccin set doses = :doses where id = :id";
             $statement = $database->prepare($query);
             $statement->execute([
