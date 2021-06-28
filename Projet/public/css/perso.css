@@ -1,11 +1,12 @@
 #footer_menu {
-   position:absolute;
-   bottom:0;
+  bottom: 0;
+  position: fixed;
    width: 100%;
    text-align: center;
 }
 
-.card, .navbar, .footer{
+
+.card, .navbar, .footer, .body{
   font-family: 'Lato', sans-serif;
 }
 

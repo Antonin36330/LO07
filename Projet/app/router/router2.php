@@ -17,10 +17,10 @@ $args = $param;
 switch ($action) {
 
   case "vaccinReadAll" :
-  case "vaccinCreate" :
+  case "vaccinNew" :
   case "vaccinCreated" :
-  case "vaccinUpdate" :
-  case "vaccinUpdated" :
+  case "vaccinMaj" :
+  case "vaccinMaj2" :
       ControllerVaccin::$action();
       break;
 

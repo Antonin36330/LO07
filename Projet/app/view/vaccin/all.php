@@ -3,7 +3,6 @@
 require($root . '/app/view/fragment/fragmentHeader.html');
 ?>
 <body>
-<div class="">
     <?php
     include $root . '/app/view/fragment/fragmentMenu.html';
     ?>
