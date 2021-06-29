@@ -3,12 +3,18 @@ require_once '../model/ModelCentre.php';
 
 class ControllerCentre
 {
-    // Liste des centres
     public static function centreReadAll()
     {
         $results = ModelCentre::getAll();
         include 'config.php';
         require($root . '/app/view/centre/all.php');
+    }
+
+    public static function centreCarte()
+    {
+        $results = ModelCentre::getAll();
+        include 'config.php';
+        require($root . '/app/view/centre/carte.php');
     }
 
     public static function centreNew()

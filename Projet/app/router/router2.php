@@ -3,6 +3,7 @@ require('../controller/Controller.php');
 require('../controller/ControllerVaccin.php');
 require('../controller/ControllerCentre.php');
 require('../controller/ControllerPatient.php');
+require('../controller/ControllerStock.php');
 
 $query_string = $_SERVER['QUERY_STRING'];
 
@@ -29,6 +30,7 @@ switch ($action) {
   case "centreReadAll" :
   case "centreNew" :
   case "centreCreated" :
+  case 'centreCarte':
   ControllerCentre::$action();
   break;
 
@@ -36,6 +38,13 @@ switch ($action) {
   case "patientNew" :
   case "patientCreated" :
   ControllerPatient::$action();
+  break;
+
+  case "stockReadAll" :
+  case "stockReadAllVaccin" :
+  case "stockNew" :
+  case "stockNew2" :
+  ControllerStock::$action();
   break;
 
   default:

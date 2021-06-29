@@ -23,6 +23,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
             <li><a class="dropdown-item" href="router2.php?action=centreReadAll">Liste des centres</a></li>
             <li><a class="dropdown-item" href="router2.php?action=centreNew">Ajout d'un centre</a></li>
+            <li><a class="dropdown-item" href="router2.php?action=centreCarte">Carte des centres</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -33,6 +34,14 @@
             <li><a class="dropdown-item" href="router2.php?action=patientReadAll">Liste des patients</a></li>
             <li><a class="dropdown-item" href="router2.php?action=patientNew">Ajout d'un patient</a></li>
           </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gestion des stocks <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                <li><a class="dropdown-item" href="router2.php?action=stockReadAllVaccin">Liste des centres avec le nombre de doses de chaque vaccin</a></li>
+                <li><a class="dropdown-item" href="router2.php?action=stockReadAll">Nombre global de doses des centres</a></li>
+                <li><a class="dropdown-item" href="router2.php?action=stockNew">Attribution de vaccins pour un centre</a></li>
+            </ul>
         </li>
       </ul>
     </div>
